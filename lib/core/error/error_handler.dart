@@ -95,3 +95,41 @@ extension DataSourceExtension on DataSource {
     }
   }
 }
+
+class ResponseCode{
+  static const int SUCCESS = 200;
+  static const int NO_CONTENT = 201;
+  static const int BAD_REQUEST = 400;
+  static const int FORBIDDEN = 403;
+  static const int UN_AUTHORISED = 401;
+  static const int NOT_FOUND = 404;
+  static const int INTERNAL_SERVER_ERROR = 500;
+  static const int DEFAULT = -1 ;
+  static const int CONNECT_TIMEOUT = -2;
+  static const int CANCEL = -3;
+  static const int RECEIVE_TIMEOUT =  -4;
+  static const int SEND_TIMEOUT = -5;
+  static const int CACHE_ERROR = -6;
+  static const int NO_INTERNET_CONNECTION = -7;
+}
+
+class ResponseMessage{
+  static const String SUCCESS = AppStrings.SUCCESS;
+  static const String NO_CONTENT = AppStrings.NO_CONTENT;
+  static const String BAD_REQUEST = AppStrings.BAD_REQUEST;
+  static const String FORBIDDEN = AppsStrings.Fforbiddenerror;
+  static const String UN_AUTHORISED = AppStrings.unauthorisedError;
+  static const String NOT_FOUND = AppStrings.notfoundError;
+  static const String INTERNAL_SERVER_ERROR = AppStrings.internalserverError;
+  static const String DEFAULT = AppStrings.defaultError;
+  static const String CONNECT_TIMEOUT = AppStrings.connecttimeoutError;
+  static const String CANCEL = AppStrings.defaultError;
+  static const String RECEIVE_TIMEOUT = AppStrings.receiveError;
+  static const String SEND_TIMEOUT = AppStrings.sendError;
+  static const String CACHE_ERROR = AppStrings.cacheError;
+  static const String NO_INTERNET_CONNECTION = AppStrings.nointernetError;
+}
+class ApiInternalStatus{
+  static const int SUCCESS = 0;
+  static const int FAILURE = 1;
+}
