@@ -66,6 +66,32 @@ extension DataSourceExtension on DataSource {
         return const ServerFailure(
           ResponseMessage.Bad_Request,
         );
+      case DataSource.FORBIDDEN:
+        return const ServerFailure(
+          ResponseMessage.FORBIDDEN,
+        );
+      case DataSource.UNAUTHORISED:
+        return const ServerFailure(ResponseMessage.UNAUTHORISED);
+      case DataSource.NOT_FOUND:
+        return const ServerFailure(ResponseMessage.NOT_FOUND);
+      case DataSource.INTERNEL_SERVER_ERROR:
+        return const ServerFailure(ResponseMessage.INTERNAL_SERVER_ERROR);
+      case DataSource.CONNECT_TIMEOUT:
+        return const ServerFailure(ResponseMessage.CONNECT_TIMEOUT);
+      case DataSource.CANCEL:
+        return const ServerFailure(ResponseMessage.CANCEL);
+      case DataSource.RECEIVE_TIMEOUT:
+        return const ServerFailure(ResponseMessage.RECEIVE_TIMEOUT);
+      case DataSource.SEND_TIMEOUT:
+        return const ServerFailure(ResponseMessage.SEND_TIMEOUT);
+      case DataSource.CACHE_ERROR:
+        return const ServerFailure(ResponseMessage.CACHE_ERROR);
+      case DataSource.NO_INTERNET_CONNECTION:
+        return const ServerFailure(ResponseMessage.NO_INTERNET_CONNECTION);
+      case DataSource.DEFAULT:
+        return const ServerFailure(ResponseMessage.DEFAULT);
+        default:
+        return const ServerFailure(ResponseMessage.default);
     }
   }
 }
