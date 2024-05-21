@@ -1,6 +1,8 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:dio/dio.dart';
-import 'package:ecommerce_user/core/error/failure.dart';
-import 'package:ecommerce_user/core/utilities/string.dart';
+import 'package:ecommerce_app/core/error/failure.dart';
+import 'package:ecommerce_app/core/utilities/strings.dart';
 
 enum DataSource {
   SUCCESS,
@@ -42,7 +44,7 @@ class ErrorHandler implements Exception {
             return DataSource.BAD_REQUEST.getFailure();
           case ResponseCode.FORBIDDEN:
             return DataSource.FORBIDDEN.getFailure();
-          case ResponseCode.UNAUTHORISED:
+          case ResponseCode.UN_AUTHORISED:
             return DataSource.UNAUTHORISED.getFailure();
           case ResponseCode.NOT_FOUND:
             return DataSource.NOT_FOUND.getFailure();
@@ -64,14 +66,14 @@ extension DataSourceExtension on DataSource {
     switch (this) {
       case DataSource.BAD_REQUEST:
         return const ServerFailure(
-          ResponseMessage.Bad_Request,
+          ResponseMessage.BAD_REQUEST,
         );
       case DataSource.FORBIDDEN:
         return const ServerFailure(
           ResponseMessage.FORBIDDEN,
         );
       case DataSource.UNAUTHORISED:
-        return const ServerFailure(ResponseMessage.UNAUTHORISED);
+        return const ServerFailure(ResponseMessage.UN_AUTHORISED);
       case DataSource.NOT_FOUND:
         return const ServerFailure(ResponseMessage.NOT_FOUND);
       case DataSource.INTERNEL_SERVER_ERROR:
@@ -90,13 +92,13 @@ extension DataSourceExtension on DataSource {
         return const ServerFailure(ResponseMessage.NO_INTERNET_CONNECTION);
       case DataSource.DEFAULT:
         return const ServerFailure(ResponseMessage.DEFAULT);
-        default:
-        return const ServerFailure(ResponseMessage.default);
+      default:
+        return const ServerFailure(ResponseMessage.DEFAULT);
     }
   }
 }
 
-class ResponseCode{
+class ResponseCode {
   static const int SUCCESS = 200;
   static const int NO_CONTENT = 201;
   static const int BAD_REQUEST = 400;
@@ -104,21 +106,21 @@ class ResponseCode{
   static const int UN_AUTHORISED = 401;
   static const int NOT_FOUND = 404;
   static const int INTERNAL_SERVER_ERROR = 500;
-  static const int DEFAULT = -1 ;
+  static const int DEFAULT = -1;
   static const int CONNECT_TIMEOUT = -2;
   static const int CANCEL = -3;
-  static const int RECEIVE_TIMEOUT =  -4;
+  static const int RECEIVE_TIMEOUT = -4;
   static const int SEND_TIMEOUT = -5;
   static const int CACHE_ERROR = -6;
   static const int NO_INTERNET_CONNECTION = -7;
 }
 
-class ResponseMessage{
+class ResponseMessage {
   static const String SUCCESS = AppStrings.SUCCESS;
   static const String NO_CONTENT = AppStrings.NO_CONTENT;
   static const String BAD_REQUEST = AppStrings.BAD_REQUEST;
-  static const String FORBIDDEN = AppsStrings.Fforbiddenerror;
-  static const String UN_AUTHORISED = AppStrings.unauthorisedError;
+  static const String FORBIDDEN = AppsStrings.FORBIDDEN;
+  static const String UN_AUTHORISED = AppStrings.UN_AUTHORISED;
   static const String NOT_FOUND = AppStrings.notfoundError;
   static const String INTERNAL_SERVER_ERROR = AppStrings.internalserverError;
   static const String DEFAULT = AppStrings.defaultError;
@@ -129,7 +131,8 @@ class ResponseMessage{
   static const String CACHE_ERROR = AppStrings.cacheError;
   static const String NO_INTERNET_CONNECTION = AppStrings.nointernetError;
 }
-class ApiInternalStatus{
+
+class ApiInternalStatus {
   static const int SUCCESS = 0;
   static const int FAILURE = 1;
 }

@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:ecommerce_user/core/network/api_provider.dart';
-import 'package:ecommerce_user/core/utilities/endpoints.dart';
+import 'package:ecommerce_app/core/network/api_provider.dart';
+import 'package:ecommerce_app/core/utilities/endpoints.dart';
 
 class APIProviderImpl implements APIProvider {
   final Dio dio = Dio(

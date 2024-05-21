@@ -1,4 +1,4 @@
-import 'package:ecommerce_user/features/forgotPassword&VerifyEmail/domain/entities/forgotpassword_entity.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/domain/entities/forgotpassword_entity.dart';
 
 class ForgotPasswordModel extends ForgotPasswordEntity {
   const ForgotPasswordModel(super.success, super.message);

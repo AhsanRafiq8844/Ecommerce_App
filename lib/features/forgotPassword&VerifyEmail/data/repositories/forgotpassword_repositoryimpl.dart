@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommerce_user/core/error/error_handler.dart';
-import 'package:ecommerce_user/core/error/failure.dart';
-import 'package:ecommerce_user/core/network/network_info.dart';
-import 'package:ecommerce_user/core/utilities/strings.dart';
-import 'package:ecommerce_user/features/forgotPassword&VerifyEmail/data/datasources/forgotpassword_datasource.dart';
-import 'package:ecommerce_user/features/forgotPassword&VerifyEmail/domain/entities/forgotpassword_entity.dart';
-import 'package:ecommerce_user/features/forgotPassword&VerifyEmail/domain/repositories/forgotpassword_repository.dart';
+import 'package:ecommerce_app/core/error/error_handler.dart';
+import 'package:ecommerce_app/core/error/failure.dart';
+import 'package:ecommerce_app/core/network/network_info.dart';
+import 'package:ecommerce_app/core/utilities/strings.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/data/datasources/forgotpassword_datasource.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/domain/entities/forgotpassword_entity.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/domain/repositories/forgotpassword_repository.dart';
 
 class ForgotPasswordRepoImpl implements ForgotPasswordRepo {
   final ForgetPasswordDataSource forgetPasswordDataSource;

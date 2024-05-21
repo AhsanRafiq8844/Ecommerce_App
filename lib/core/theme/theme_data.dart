@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';\
-import 'package:ecommerce_user/core/color/colors.dart';
-import 'package:ecommerce_user/core/utilities/enum.dart';
+import 'package:ecommerce_app/core/color/colors.dart';
+import 'package:ecommerce_app/core/utilities/enums.dart';
+import 'package:flutter/material.dart';
 
 final appThemeData = {
   AppTheme.lightTheme: ThemeData(
@@ -87,7 +87,7 @@ final appThemeData = {
         color: ColorManager.light,
       ),
     ),
-    cardColor:ColorManager.green ,
+    cardColor: ColorManager.green,
     scaffoldBackgroundColor: ColorManager.dark,
     bottomSheetTheme:
         const BottomSheetThemeData(backgroundColor: ColorManager.dark),

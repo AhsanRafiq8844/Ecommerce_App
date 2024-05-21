@@ -1,7 +1,7 @@
-import 'package:ecommerce_user/core/network/api_provider.dart';
-import 'package:ecommerce_user/core/utilities/endpoints.dart';
-import 'package:ecommerce_user/features/forgotPassword&VerifyEmail/data/models/forgotpassword_model.dart';
-import 'package:ecommerce_user/features/forgotPassword&VerifyEmail/domain/repositories/forgotpassword.dart';
+import 'package:ecommerce_app/core/network/api_provider.dart';
+import 'package:ecommerce_app/core/utilities/endpoints.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/data/models/forgetpassword_models.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/domain/repositories/forgotpassword_repository.dart';
 
 abstract class ForgetPasswordDataSource {
   Future<ForgotPasswordModel> getLink(ForgotParams params);

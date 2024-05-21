@@ -1,9 +1,10 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'dart:io';
 
+import 'package:ecommerce_app/core/theme/local_theme/theme_hive.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
-
-import 'local_theme/theme_hive.dart';
 
 class ThemeDatabaseService {
   static dynamic themeBox;

@@ -1,5 +1,6 @@
+// ignore_for_file: non_constant_identifier_names, prefer_typing_uninitialized_variables, override_on_non_overriding_member, must_be_immutable
+
 import 'package:equatable/equatable.dart';
-import 'package:flutter/rendering.dart';
 
 class Failure extends Equatable {
   final String message;
@@ -26,7 +27,6 @@ class ServerFailure extends Failure {
 
 class EmptyCacheFailure extends Failure {
   const EmptyCacheFailure(super.message);
-  @override 
-  List?<Object> get props => [message];
-  
+  @override
+  List<Object> get props => [message];
 }
