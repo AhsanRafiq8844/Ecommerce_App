@@ -1,8 +1,9 @@
+import 'package:ecommerce_app/features/payment/presentation/bloc/order_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';
-import 'package:shopack_user/features/payment/presentation/bloc/order_bloc.dart';
-import '../../../../core/colors/colors.dart';
+
+import '../../../../core/color/colors.dart';
 import '../../../../core/local/shared_preference.dart';
 import '../../../../core/theme/bloc/theme_bloc.dart';
 import '../../../../core/theme/theme_data.dart';
@@ -116,7 +117,8 @@ class ProfileView extends StatelessWidget {
                         title: AppStrings.myOrders,
                         subtitle: AppStrings.orders,
                         ontab: () {
-                          BlocProvider.of<OrderBloc>(context).add(GetAllOrders());
+                          BlocProvider.of<OrderBloc>(context)
+                              .add(GetAllOrders());
                           Navigator.pushNamed(context, AppRoutes.orders);
                         },
                       ),
@@ -124,7 +126,8 @@ class ProfileView extends StatelessWidget {
                         title: AppStrings.changePassword,
                         subtitle: AppStrings.changePasswordsub,
                         ontab: () {
-                          Navigator.pushNamed(context, AppRoutes.updatePassword);
+                          Navigator.pushNamed(
+                              context, AppRoutes.updatePassword);
                         },
                       ),
                       ListTile(

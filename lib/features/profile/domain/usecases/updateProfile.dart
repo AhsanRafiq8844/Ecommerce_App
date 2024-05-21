@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 
 import '../../../../core/error/failure.dart';
-import '../../../../core/usecase/usecase.dart';
+import '../../../../core/use cases/use case.dart';
 import '../entities/profile_entity.dart';
 import '../repositories/profile_repository.dart';
 
@@ -13,7 +13,8 @@ class UpdateUserDetailUsecase
   @override
   Future<Either<Failure, ProfileEntity>> call(
       UpdateProfileUsecaseParams params) async {
-    return await profileRepository.updateProfile(UpdateProfileParams(params.name, params.email, params.avatar));
+    return await profileRepository.updateProfile(
+        UpdateProfileParams(params.name, params.email, params.avatar));
   }
 }
 

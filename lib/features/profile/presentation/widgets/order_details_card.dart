@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../core/colors/colors.dart';
+
+import '../../../../core/color/colors.dart';
 import '../../../../core/utilities/mediaquery.dart';
 import '../../../payment/domain/entities/all_orders_entity.dart';
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/colors/colors.dart';
+
+import '../../../../core/color/colors.dart';
 import '../../../../core/local/shared_preference.dart';
 import '../../../../core/utilities/mediaquery.dart';
 import '../../../../core/utilities/routes.dart';
@@ -50,9 +51,12 @@ class _RegisterViewState extends State<RegisterView> {
                     children: [
                       Text(
                         AppStrings.register,
-                        style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: ColorManager.dark),
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium!
+                            .copyWith(
+                                fontWeight: FontWeight.bold,
+                                color: ColorManager.dark),
                       ),
                     ],
                   ),

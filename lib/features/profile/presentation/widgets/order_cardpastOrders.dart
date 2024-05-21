@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import '../../../../core/colors/colors.dart';
+
+import '../../../../core/color/colors.dart';
 import '../../../../core/utilities/mediaquery.dart';
 import '../../../../core/utilities/routes.dart';
 import '../../../../core/utilities/strings.dart';
@@ -13,7 +14,7 @@ class OrderCardPastOrders extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-      final bloc = BlocProvider.of<OrderBloc>(context);
+    final bloc = BlocProvider.of<OrderBloc>(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       child: Container(
@@ -50,7 +51,7 @@ class OrderCardPastOrders extends StatelessWidget {
                 children: [
                   OutlinedButton(
                     onPressed: () {
-                       Navigator.pushNamed(context, AppRoutes.orderDetails,
+                      Navigator.pushNamed(context, AppRoutes.orderDetails,
                           arguments: bloc.pastOrders[index]);
                     },
                     child: const Text(AppStrings.viewdetails),

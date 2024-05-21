@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/colors/colors.dart';
+
+import '../../../../core/color/colors.dart';
 import '../../../../core/utilities/mediaquery.dart';
 import '../../../../core/utilities/routes.dart';
 import '../../../../core/utilities/strings.dart';
@@ -132,10 +133,12 @@ class _UpdatePasswordViewState extends State<UpdatePasswordView> {
                             ontab: () {
                               if (formKey.currentState!.validate()) {
                                 BlocProvider.of<UpdatePasswordBloc>(context)
-                                    .add(UserUpdatePassword(
-                                        oldpassController.text,
-                                        newpassController.text,
-                                        repeatpassController.text),);
+                                    .add(
+                                  UserUpdatePassword(
+                                      oldpassController.text,
+                                      newpassController.text,
+                                      repeatpassController.text),
+                                );
                               }
                             });
                   },

@@ -1,6 +1,7 @@
+import 'package:ecommerce_app/core/color/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:shopack_user/core/colors/colors.dart';
+
 import '../../../../core/utilities/strings.dart';
 import '../../../payment/domain/entities/all_orders_entity.dart';
 import '../widgets/order_details_card.dart';

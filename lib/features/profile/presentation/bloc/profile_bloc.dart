@@ -3,7 +3,8 @@ import 'package:cloudinary_sdk/cloudinary_sdk.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:image_picker/image_picker.dart';
-import '../../../../core/usecase/usecase.dart';
+
+import '../../../../core/use cases/use case.dart';
 import '../../domain/entities/profile_entity.dart';
 import '../../domain/usecases/getUserDetail.dart';
 import '../../domain/usecases/updateProfile.dart';
@@ -35,13 +36,13 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       emit(UpdateProfileLoadingState());
       final failureOrSuccess = await updataProfile(
           UpdateProfileUsecaseParams(event.name, event.email, event.avatar));
-      failureOrSuccess.fold(
-          (failure) => emit(UpdateProfileErrorState(failure.message)),
-          (success) {
-              userName = success.user!.name;
+      failureOrSuccess
+          .fold((failure) => emit(UpdateProfileErrorState(failure.message)),
+              (success) {
+        userName = success.user!.name;
         userEmail = success.user!.email;
-             emit(ProfileUpdateState(success));
-          });
+        emit(ProfileUpdateState(success));
+      });
     });
 
     on<UploadImage>((event, emit) async {
