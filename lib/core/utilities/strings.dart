@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 class AppStrings {
   static const String appName = "ShoPack App";
   static const String onBoardingTitle1 = "Explore & Select What You Love";
@@ -160,4 +162,8 @@ class AppStrings {
   static const String defaultError = "Error In Fetching Data";
   static const String cacheError = "cache_error";
   static const String noInternetError = "Please Check Your Internet Connection";
+
+  static String SUCCESS;
+
+  static String BAD_REQUEST;
 }

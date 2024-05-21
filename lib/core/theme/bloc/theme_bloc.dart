@@ -1,7 +1,7 @@
-import 'package:ecommerce_user/core/theme/theme_data.dart';
-import 'package:ecommerce_user/core/theme_service.dart';
-import 'package:ecommerce_user/core/utilities/enum.dart';
-import 'package:equateable/equateable.dart';
+import 'package:ecommerce_app/core/theme/theme_data.dart';
+import 'package:ecommerce_app/core/theme/theme_service.dart';
+import 'package:ecommerce_app/core/utilities/enums.dart';
+import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

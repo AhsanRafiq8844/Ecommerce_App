@@ -1,7 +1,7 @@
-import 'package:ecommerce_user/core/utilities/strings.dart';
-import 'package:ecommerce_user/features/favorite/presentation/bloc/favourite_bloc.dart';
-import 'package:ecommerce_user/features/home/widgets/customGridView.dart';
-import 'package:ecommerce_user/features/home/widgets/product_item.dart';
+import 'package:ecommerce_app/core/utilities/strings.dart';
+import 'package:ecommerce_app/features/favourite/presentation/bloc/favourite_bloc.dart';
+import 'package:ecommerce_app/features/home/widgets/customGridView.dart';
+import 'package:ecommerce_app/features/home/widgets/product_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';

@@ -1,12 +1,11 @@
-import 'package:ecommerce_user/core/theme/bloc/theme_bloc.dart';
-import 'package:ecommerce_user/core/utilities/endpoints.dart';
-import 'package:ecommerce_user/features/cart/presentation/bloc/cart_bloc.dart';
-import 'package:ecommerce_user/features/cart/presentation/bloc/cubit/address_cubit.dart';
-import 'package:ecommerce_user/features/cart/presentation/bloc/location_bloc.dart';
-import 'package:ecommerce_user/features/payment/presentation/bloc/order_bloc.dart';
+import 'package:ecommerce_app/core/theme/bloc/theme_bloc.dart';
+import 'package:ecommerce_app/core/utilities/endpoints.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/cart_bloc.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/address_cubit.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/location_bloc.dart';
+import 'package:ecommerce_app/features/payment/presentation/bloc/order_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:hive_flutter/adapters.dart';
 
 import 'core/theme/theme_service.dart';

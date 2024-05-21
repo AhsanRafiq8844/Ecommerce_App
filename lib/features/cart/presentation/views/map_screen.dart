@@ -186,26 +186,24 @@ class MapView extends StatelessWidget {
                                         BlocProvider.of<AddressCubit>(context)
                                             .location;
 
-                                    if (latLng != null) {
-                                      bloc.myCurrentPosition = Position(
-                                          longitude: latLng.longitude,
-                                          latitude: latLng.latitude,
-                                          timestamp: null,
-                                          accuracy: 0.0,
-                                          altitude: 0.0,
-                                          heading: 0.0,
-                                          speed: 0.0,
-                                          speedAccuracy: 0.0);
-                                      bloc.googleMapController.animateCamera(
-                                        CameraUpdate.newCameraPosition(
-                                          CameraPosition(
-                                            target: latLng,
-                                            zoom: 15,
-                                          ),
+                                    bloc.myCurrentPosition = Position(
+                                        longitude: latLng.longitude,
+                                        latitude: latLng.latitude,
+                                        timestamp: null,
+                                        accuracy: 0.0,
+                                        altitude: 0.0,
+                                        heading: 0.0,
+                                        speed: 0.0,
+                                        speedAccuracy: 0.0);
+                                    bloc.googleMapController.animateCamera(
+                                      CameraUpdate.newCameraPosition(
+                                        CameraPosition(
+                                          target: latLng,
+                                          zoom: 15,
                                         ),
-                                      );
-                                    }
-                                    bloc.searchController.text =
+                                      ),
+                                    );
+                                                                      bloc.searchController.text =
                                         suggestion.description;
                                     Navigator.pop(context);
                                   },

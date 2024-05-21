@@ -1,35 +1,35 @@
 import 'dart:async';
 
-import 'package:shared_preference/shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefrenceHelper {
-  static late SharedPreferences sharedPrefrences;
+  static late SharedPreferences sharedPreferences;
   static init() async {
-    sharedPrefrences = await SharedPrefrences.getInstance();
+    sharedPreferences = await SharedPreferences.getInstance();
   }
 
   static dynamic getDataFromSharedPrefrence({required String key}) {
-    return sharedPrefrences.get(key);
+    return sharedPreferences.get(key);
   }
 
   static Future<bool> saveDataInSharedPrefrence(
       {required String key, required dynamic value}) async {
     if (value is bool) {
-      return await sharedPrefrences.setBool(key, value);
+      return await sharedPreferences.setBool(key, value);
     } else if (value is String) {
-      return await sharedPrefrences.setString(key, value);
+      return await sharedPreferences.setString(key, value);
     } else if (value is int) {
-      return await sharedPrefrences.setInt(key, value);
+      return await sharedPreferences.setInt(key, value);
     } else {
-      return await sharedPrefrences.setDouble(key, value);
+      return await sharedPreferences.setDouble(key, value);
     }
   }
 
   static Future<bool> removeData({required String key}) async {
-    return await sharedPrefrences.remove(key);
+    return await sharedPreferences.remove(key);
   }
 
   static Future clearData() {
-    return sharedPrefrences.clear();
+    return sharedPreferences.clear();
   }
 }

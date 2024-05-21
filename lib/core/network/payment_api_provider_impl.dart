@@ -1,6 +1,6 @@
-import 'package: dio/dio.dart';
-import 'package: ecommerce_user/core/network/paymentApiProvider.dart';
-import 'package: ecommerce_user/core/utilities/endpoints.dart';
+import 'package:dio/dio.dart';
+import 'package:ecommerce_app/core/network/PaymentApiProvider.dart';
+import 'package:ecommerce_app/core/utilities/endpoints.dart';
 
 class PaymentAPIProviderImpl implements PaymentAPIProvider {
   final Dio dio = Dio(

@@ -1,8 +1,8 @@
-import 'package:datz/dartz.dart';
-import 'package:ecommerce_user/core/error/failure.dart';
-import 'package:ecommerce_user/core/usercase/usecase.dart';
-import 'package:ecommerce_user/features/forgotPassword&VerifyEmail/domain/entities/forgotpassword_entity.dart';
-import 'package:ecommerce_user/features/forgotPassword&VerifyEmail/domain/repository/forgotpassword_repository.dart';
+import 'package:dartz/dartz.dart';
+import 'package:ecommerce_app/core/error/failure.dart';
+import 'package:ecommerce_app/core/use%20cases/use%20case.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/domain/entities/forgotpassword_entity.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/domain/repositories/forgotpassword_repository.dart';
 
 class ForgotPassUsecase
     implements BaseUsecase<ForgotPasswordEntity, ForgetPasswordUsecaseParams> {

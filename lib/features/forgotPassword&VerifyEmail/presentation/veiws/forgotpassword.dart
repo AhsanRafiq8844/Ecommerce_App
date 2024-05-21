@@ -1,10 +1,11 @@
-import 'package:ecommerce_user/core/color/colors.dart';
-import 'package:ecommerce_user/core/localshared_prefrence.dart';
-import 'package:ecommerce_user/core/utilities/endpoints.dart';
-import 'package:ecommerce_user/core/utilities/enums.dart';
-import 'package:ecommerce_user/core/utilities/mediaquery.dart';
-import 'package:ecommerce_user/core/utilities/routes.dart';
-import 'package:ecommerce_user/core/utilities/strings.dart';
+import 'package:ecommerce_app/core/color/colors.dart';
+import 'package:ecommerce_app/core/localShared_preference.dart';
+import 'package:ecommerce_app/core/utilities/endpoints.dart';
+import 'package:ecommerce_app/core/utilities/enums.dart';
+import 'package:ecommerce_app/core/utilities/mediaquery.dart';
+import 'package:ecommerce_app/core/utilities/routes.dart';
+import 'package:ecommerce_app/core/utilities/strings.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/presentation/forgotPassword&VerifyEmail_bloc/forgotpass&verifyemail_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
