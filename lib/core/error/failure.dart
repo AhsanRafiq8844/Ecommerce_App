@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/rendering.dart';
 
 class Failure extends Equatable {
   final String message;
@@ -25,8 +24,9 @@ class ServerFailure extends Failure {
 }
 
 class EmptyCacheFailure extends Failure {
-  const EmptyCacheFailure(super.message);
+   EmptyCacheFailure(super.message);
   @override 
-  List?<Object> get props => [message];
+  List?<Object> @override
+  get props => [message];
   
 }

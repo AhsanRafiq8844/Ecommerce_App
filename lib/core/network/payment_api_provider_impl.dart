@@ -1,7 +1,6 @@
 import 'package: dio/dio.dart';
 import 'package: ecommerce_user/core/network/paymentApiProvider.dart';
 import 'package: ecommerce_user/core/utilities/endpoints.dart';
-import 'package:flutter/rendering.dart';
 
 class PaymentAPIProviderImpl implements PaymentAPIProvider {
   final Dio dio = Dio(

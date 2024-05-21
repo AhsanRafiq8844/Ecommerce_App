@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:shared_prefrence/shared_prefrences.dart';
+import 'package:shared_preference/shared_preferences.dart';
 
 class PrefrenceHelper {
   static late SharedPreferences sharedPrefrences;

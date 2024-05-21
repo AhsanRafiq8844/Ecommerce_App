@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
 
-import 'local_theme/theme_hive.dart';
 
 class ThemeDatabaseService {
   static dynamic themeBox;
