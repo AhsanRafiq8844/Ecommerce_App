@@ -1,8 +1,10 @@
+import 'package:ecommerce_app/features/SetPassword/presentation/views/setpassword.dart';
 import 'package:ecommerce_app/features/cart/presentation/views/checkout.dart';
-import 'package:ecommerce_app/features/forgotpass&verifyemail/presentation/views/forgotpassword.dart';
-import 'package:ecommerce_app/features/home/presentation/view/home.dart';
-import 'package:ecommerce_app/features/home/presentation/view/layout.dart';
-import 'package:ecommerce_app/features/home/presentation/view/product_details.dart';
+import 'package:ecommerce_app/features/cart/presentation/views/map_screen.dart';
+import 'package:ecommerce_app/features/forgotPassword&VerifyEmail/presentation/veiws/forgotpassword.dart';
+import 'package:ecommerce_app/features/home/presentation/views/home.dart';
+import 'package:ecommerce_app/features/home/presentation/views/layout.dart';
+import 'package:ecommerce_app/features/home/presentation/views/product_details.dart';
 import 'package:ecommerce_app/features/login/presentation/view/login.dart';
 import 'package:ecommerce_app/features/payment/domain/entities/all_orders_entity.dart';
 import 'package:ecommerce_app/features/payment/presentation/views/payment.dart';
@@ -13,11 +15,10 @@ import 'package:ecommerce_app/features/profile/presentation/views/orders.dart';
 import 'package:ecommerce_app/features/profile/presentation/views/updatePass.dart';
 import 'package:ecommerce_app/features/profile/presentation/views/updateprofile.dart';
 import 'package:ecommerce_app/features/register/presentation/views/register.dart';
-import 'package:ecommerce_app/features/setpassword/presentation/views/setpassword.dart';
 import 'package:ecommerce_app/features/shop/domain/entities/products_entity.dart';
 import 'package:ecommerce_app/features/shop/presentation/views/reviews.dart';
-import 'package:ecommerce_app/features/splash&onboarding/presentation/views/onBoarding.dart';
-import 'package:ecommerce_app/features/splash&onboarding/presentation/views/splash.dart';
+import 'package:ecommerce_app/features/splash&OnBoarding/presentation/views/onBoarding.dart';
+import 'package:ecommerce_app/features/splash&OnBoarding/presentation/views/splash.dart';
 import 'package:flutter/material.dart';
 
 import 'routes.dart';
