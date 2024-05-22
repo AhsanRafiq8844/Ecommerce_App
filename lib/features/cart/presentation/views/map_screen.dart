@@ -188,7 +188,7 @@ class MapView extends StatelessWidget {
 
                                     bloc.myCurrentPosition = Position(
                                         longitude: latLng!.longitude,
-                                        latitude: latLng!.latitude,
+                                        latitude: latLng.latitude,
                                         timestamp: null,
                                         accuracy: 0.0,
                                         altitude: 0.0,
