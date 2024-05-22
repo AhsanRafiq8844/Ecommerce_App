@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce_user/features/shop/domain/entities/products_entity.dart';
+import 'package:ecommerce_app/features/cart/data/models/cart_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../data/models/cart_model.dart';
@@ -34,13 +34,13 @@ class CartBloc extends Bloc<CartEvent, CartState> {
           numOfReviews: event.product.numOfReviews,
           user: event.product.user,
           productImage: event.product.images.first.url,
-          amount: event.product.qouantity);
+          amount: event.product.quantity);
       itemBox.add(cartProduct);
       Map<String, dynamic> orderitem = {
         "name": event.product.name,
         "image": event.product.images.first.url,
         "price": event.product.price,
-        "quantity": event.product.qouantity
+        "quantity": event.product.quantity
       };
       orderItems.add(orderitem);
 

@@ -1,8 +1,9 @@
-import 'package:ecommerce_user/core/local/cache_manager.dart';
-import 'package:ecommerce_user/features/cart/data/models/cart_model.dart';
+import 'package:ecommerce_app/core/local/cache_manager.dart';
+import 'package:ecommerce_app/features/cart/data/models/cart_model.dart';
 import 'package:hive/hive.dart';
 
-class CartLocalDataSourceManager implements CacheManagerBase<CartProduct> {
+abstract class CartLocalDataSourceManager
+    implements CacheManagerBase<CartProduct> {
   @override
   Future<void> init() async {
     registerAdapter();
