@@ -1,6 +1,5 @@
 import 'package:ecommerce_app/core/network/payment_api_provider_impl.dart';
 import 'package:ecommerce_app/core/theme/bloc/theme_bloc.dart';
-import 'package:ecommerce_app/features/SetPassword/presentation/bloc/reset_password_bloc.dart';
 import 'package:ecommerce_app/features/cart/data/datasource/placesAPI.dart';
 import 'package:ecommerce_app/features/cart/presentation/bloc/cart_bloc.dart';
 import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/address_cubit.dart';
