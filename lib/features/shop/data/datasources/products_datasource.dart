@@ -1,6 +1,6 @@
+import 'package:ecommerce_app/core/local/shared_preference.dart';
 import 'package:ecommerce_app/features/shop/data/models/reviews_model.dart';
 
-import '../../../../core/local/shared_preference.dart';
 import '../../../../core/network/api_provider.dart';
 import '../../../../core/utilities/endpoints.dart';
 import '../../domain/repositories/product_repository.dart';

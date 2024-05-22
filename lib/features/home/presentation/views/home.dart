@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/core/utilities/mediaquery.dart';
 import 'package:ecommerce_app/core/utilities/strings.dart';
-import 'package:ecommerce_app/features/home/presentation/view/products_details.dart';
-import 'package:ecommerce_app/features/home/widgets/customerGridView.dart';
+import 'package:ecommerce_app/features/home/presentation/views/product_details.dart';
+import 'package:ecommerce_app/features/home/widgets/customGridView.dart';
 import 'package:ecommerce_app/features/home/widgets/header.dart';
 import 'package:ecommerce_app/features/home/widgets/product_item_new.dart';
-import 'package:ecommerce_app/features/shop/prenstation/bloc/product_bloc.dart';
+import 'package:ecommerce_app/features/shop/presentation/bloc/products_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';

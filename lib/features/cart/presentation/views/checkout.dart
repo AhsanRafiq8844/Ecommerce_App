@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/core/color/colors.dart';
 import 'package:ecommerce_app/core/utilities/mediaquery.dart';
 import 'package:ecommerce_app/core/utilities/strings.dart';
-import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/cubit_bloc.dart';
-import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/location_bloc.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/cart_bloc.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/location_bloc.dart';
 import 'package:ecommerce_app/features/cart/presentation/widgets/deliverymethod_card.dart';
 import 'package:ecommerce_app/features/cart/presentation/widgets/mappreview.dart';
 import 'package:ecommerce_app/features/login/presentation/widgets/alert_snackbar.dart';

@@ -44,7 +44,9 @@ class CacheManager implements CacheManagerBase<ProfileEntity> {
 
   @override
   Future<void> clearAt(id) {
-
     throw UnimplementedError();
   }
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

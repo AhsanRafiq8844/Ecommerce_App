@@ -3,7 +3,8 @@
 import 'package:ecommerce_app/core/utilities/strings.dart';
 import 'package:ecommerce_app/features/cart/data/datasource/placesAPI.dart';
 import 'package:ecommerce_app/features/cart/data/models/suggessions_model.dart';
-import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/location_bloc.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/address_cubit.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/location_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
@@ -186,8 +187,8 @@ class MapView extends StatelessWidget {
                                             .location;
 
                                     bloc.myCurrentPosition = Position(
-                                        longitude: latLng.longitude,
-                                        latitude: latLng.latitude,
+                                        longitude: latLng!.longitude,
+                                        latitude: latLng!.latitude,
                                         timestamp: null,
                                         accuracy: 0.0,
                                         altitude: 0.0,

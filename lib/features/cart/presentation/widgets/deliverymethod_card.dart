@@ -1,8 +1,8 @@
-import 'package:ecommerce_user/features/cart/presentation/bloc/location_bloc.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/location_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/colors/colors.dart';
+import '../../../../core/color/colors.dart';
 import '../../../../core/utilities/mediaquery.dart';
 
 class DeliveryMethodCard extends StatefulWidget {
