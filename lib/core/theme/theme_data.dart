@@ -42,8 +42,8 @@ final appThemeData = {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all(ColorManager.orangeLight),
-        shape: MaterialStateProperty.all(
+        backgroundColor: WidgetStateProperty.all(ColorManager.orangeLight),
+        shape: WidgetStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25),
           ),
@@ -52,7 +52,7 @@ final appThemeData = {
     ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all(ColorManager.orangeLight),
+        foregroundColor: WidgetStateProperty.all(ColorManager.orangeLight),
       ),
     ),
     progressIndicatorTheme:
@@ -60,14 +60,14 @@ final appThemeData = {
     buttonTheme: const ButtonThemeData(buttonColor: ColorManager.orangeLight),
     indicatorColor: ColorManager.orangeLight,
     tabBarTheme: TabBarTheme(
-        overlayColor: MaterialStateProperty.all(
+        overlayColor: WidgetStateProperty.all(
             ColorManager.orangeLight.withOpacity(0.1)),
         labelColor: ColorManager.orangeLight,
         unselectedLabelColor: ColorManager.grey),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all(ColorManager.orangeLight),
-        overlayColor: MaterialStateProperty.all(
+        foregroundColor: WidgetStateProperty.all(ColorManager.orangeLight),
+        overlayColor: WidgetStateProperty.all(
             ColorManager.orangeLight.withOpacity(0.1)),
       ),
     ),
@@ -115,8 +115,8 @@ final appThemeData = {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all(ColorManager.orangeDark),
-        shape: MaterialStateProperty.all(
+        backgroundColor: WidgetStateProperty.all(ColorManager.orangeDark),
+        shape: WidgetStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25),
           ),
@@ -125,7 +125,7 @@ final appThemeData = {
     ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all(ColorManager.orangeDark),
+        foregroundColor: WidgetStateProperty.all(ColorManager.orangeDark),
       ),
     ),
     progressIndicatorTheme:
@@ -134,16 +134,16 @@ final appThemeData = {
     indicatorColor: ColorManager.orangeDark,
     tabBarTheme: TabBarTheme(
         overlayColor:
-            MaterialStateProperty.all(ColorManager.orangeDark.withOpacity(0.1)),
+            WidgetStateProperty.all(ColorManager.orangeDark.withOpacity(0.1)),
         labelColor: ColorManager.orangeDark,
         unselectedLabelColor: ColorManager.grey),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: ButtonStyle(
-        side: MaterialStateProperty.all(
+        side: WidgetStateProperty.all(
             const BorderSide(color: ColorManager.orangeDark)),
-        foregroundColor: MaterialStateProperty.all(ColorManager.orangeDark),
+        foregroundColor: WidgetStateProperty.all(ColorManager.orangeDark),
         overlayColor:
-            MaterialStateProperty.all(ColorManager.orangeDark.withOpacity(0.1)),
+            WidgetStateProperty.all(ColorManager.orangeDark.withOpacity(0.1)),
       ),
     ),
   ),
