@@ -1,21 +1,18 @@
 import 'package:ecommerce_app/core/color/colors.dart';
 import 'package:ecommerce_app/features/cart/presentation/bloc/cart_bloc.dart';
-import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/cubit_bloc.dart';
 import 'package:ecommerce_app/features/favourite/presentation/bloc/favourite_bloc.dart';
+import 'package:ecommerce_app/features/home/widgets/caeousel.dart';
 import 'package:ecommerce_app/features/shop/presentation/bloc/send_review_bloc.dart';
 import 'package:ecommerce_app/features/shop/presentation/widgets/review_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-import '../../../../core/colors/colors.dart';
 import '../../../../core/utilities/mediaquery.dart';
 import '../../../../core/utilities/routes.dart';
 import '../../../../core/utilities/strings.dart';
-import '../../../favorite/presentation/bloc/favourite_bloc.dart';
 import '../../../login/presentation/widgets/alert_snackbar.dart';
 import '../../../shop/domain/entities/products_entity.dart';
-import '../../widgets/carousel.dart';
 import '../../widgets/product_item.dart';
 
 class ProductDetails extends StatefulWidget {

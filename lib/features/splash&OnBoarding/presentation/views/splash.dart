@@ -1,12 +1,11 @@
 import 'dart:async';
 
 import 'package:ecommerce_app/core/color/colors.dart';
+import 'package:ecommerce_app/core/local/shared_preference.dart';
 import 'package:ecommerce_app/core/utilities/endpoints.dart';
 import 'package:ecommerce_app/core/utilities/routes.dart';
 import 'package:ecommerce_app/core/utilities/strings.dart';
 import 'package:flutter/material.dart';
-
-import '../../../../core/local/shared_preference.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

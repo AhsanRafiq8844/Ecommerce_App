@@ -162,8 +162,4 @@ class AppStrings {
   static const String defaultError = "Error In Fetching Data";
   static const String cacheError = "cache_error";
   static const String noInternetError = "Please Check Your Internet Connection";
-
-  static String SUCCESS;
-
-  static String BAD_REQUEST;
 }

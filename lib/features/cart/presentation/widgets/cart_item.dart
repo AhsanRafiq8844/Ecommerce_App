@@ -1,12 +1,12 @@
-import 'package:ecommerce_user/features/cart/data/models/cart_model.dart';
+import 'package:ecommerce_app/features/cart/data/models/cart_model.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/cart_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/colors/colors.dart';
+import '../../../../core/color/colors.dart';
 import '../../../../core/utilities/mediaquery.dart';
 import '../../../../core/utilities/strings.dart';
 import '../../../login/presentation/widgets/alert_snackbar.dart';
-import '../bloc/cart_bloc.dart';
 
 class CatItem extends StatelessWidget {
   final CartProduct item;

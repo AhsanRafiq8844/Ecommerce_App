@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+
 import '../../domain/entities/resetpassword_entity.dart';
 import '../../domain/usecases/resetpassword_usecase.dart';
 

@@ -1,6 +1,6 @@
-import 'package:ecommerce_user/core/colors/colors.dart';
-import 'package:ecommerce_user/core/utilities/routes.dart';
-import 'package:ecommerce_user/features/cart/presentation/bloc/location_bloc.dart';
+import 'package:ecommerce_app/core/color/colors.dart';
+import 'package:ecommerce_app/core/utilities/routes.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/location_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 

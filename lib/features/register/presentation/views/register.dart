@@ -1,8 +1,8 @@
+import 'package:ecommerce_app/core/local/shared_preference.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/color/colors.dart';
-import '../../../../core/local/shared_preference.dart';
 import '../../../../core/utilities/mediaquery.dart';
 import '../../../../core/utilities/routes.dart';
 import '../../../../core/utilities/strings.dart';

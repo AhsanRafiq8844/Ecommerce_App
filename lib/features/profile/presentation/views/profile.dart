@@ -1,10 +1,10 @@
+import 'package:ecommerce_app/core/local/shared_preference.dart';
 import 'package:ecommerce_app/features/payment/presentation/bloc/order_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../../core/color/colors.dart';
-import '../../../../core/local/shared_preference.dart';
 import '../../../../core/theme/bloc/theme_bloc.dart';
 import '../../../../core/theme/theme_data.dart';
 import '../../../../core/theme/theme_service.dart';

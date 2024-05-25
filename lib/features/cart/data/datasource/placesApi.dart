@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:ecommerce_user/core/utilities/endpoints.dart';
-import 'package:ecommerce_user/features/cart/data/models/palcedetail_model.dart';
-import 'package:ecommerce_user/features/cart/models/suggession_model.dart';
+import 'package:ecommerce_app/core/utilities/endpoints.dart';
+import 'package:ecommerce_app/features/cart/data/models/placedetail_model.dart';
+import 'package:ecommerce_app/features/cart/data/models/suggessions_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 

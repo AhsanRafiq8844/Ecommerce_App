@@ -1,9 +1,9 @@
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce_user/core/error/error_handler.dart';
-import 'package:ecommerce_user/core/network/network_info.dart';
-import 'package:ecommerce_user/core/utilities/strings.dart';
-import 'package:ecommerce_user/features/cart/data/datasource/placesAPI.dart';
-import 'package:ecommerce_user/features/cart/presentation/widgets/permissiondialog.dart';
+import 'package:ecommerce_app/core/error/error_handler.dart';
+import 'package:ecommerce_app/core/network/network_info.dart';
+import 'package:ecommerce_app/core/utilities/strings.dart';
+import 'package:ecommerce_app/features/cart/data/datasource/placesAPI.dart';
+import 'package:ecommerce_app/features/cart/presentation/widgets/permissiondialog.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';

@@ -1,6 +1,7 @@
-import 'package:ecommerce_user/core/local/cache_manager.dart';
-import 'package:ecommerce_user/features/cart/data/models/cart_model.dart';
 import 'package:hive/hive.dart';
+
+import '../../../../core/local/cache_manager.dart';
+import '../models/cart_model.dart';
 
 class CartLocalDataSourceManager implements CacheManagerBase<CartProduct> {
   @override
@@ -42,4 +43,7 @@ class CartLocalDataSourceManager implements CacheManagerBase<CartProduct> {
   Future<void> clearAt(int id) async {
     await Hive.box("product-cahce").deleteAt(id);
   }
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce_user/features/shop/domain/entities/products_entity.dart';
+import 'package:ecommerce_app/features/shop/domain/entities/products_entity.dart';
+import 'package:equatable/equatable.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../data/models/cart_model.dart';

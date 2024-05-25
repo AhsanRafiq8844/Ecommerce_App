@@ -1,11 +1,11 @@
 import 'package:ecommerce_app/core/color/colors.dart';
-import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/cubit_bloc.dart';
-import 'package:ecommerce_app/features/cart/presentation/bloc/cubit/location_bloc.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/cart_bloc.dart';
+import 'package:ecommerce_app/features/cart/presentation/bloc/location_bloc.dart';
+import 'package:ecommerce_app/features/favourite/presentation/veiws/favourite.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../cart/presentation/views/cart.dart';
-import '../../../favourite/presentation/views/favourite.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/views/profile.dart';
 import '../../../shop/presentation/bloc/products_bloc.dart';
